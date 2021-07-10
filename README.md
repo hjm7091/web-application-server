@@ -32,7 +32,7 @@
   ![image](https://user-images.githubusercontent.com/28583661/123516210-e5665880-d6d5-11eb-8a0d-eecfc4504834.png)
 * 따라서 http://localhost/index.html 요청과 같이 requestPath 의 상위 경로가 다른 요청에는 다음과 같이 쿠키가 블로킹된다.
   ![image](https://user-images.githubusercontent.com/28583661/123516295-5148c100-d6d6-11eb-94ed-94ae51c4fd68.png)
-
+* 쿠키를 등록할 때 'httpResponse.addHeader("Set-Cookie", "logined=true; Path=/");' 처럼 Path 를 root 로 설정해주면 모든 요청에 대해 쿠키가 존재한다.
 
 ### 요구사항 6 - stylesheet 적용
 *
